@@ -65,7 +65,7 @@ class Login extends Component{
                    onChangeText={(pass)=>this.setState({pass})}/>
                 </Item>
                 <Item inlineLabel last>
-                    <Button success style = {misEstilos.boton2} 
+                    <Button success style = {misEstilos.boton} 
                    onPress={() => {this.login() }}>
                     <Text>Ingresar</Text>
                     </Button>
@@ -79,6 +79,7 @@ class Login extends Component{
                         navigation.navigate('Registro')}>
                     <Text>Registrarse</Text>
                     </Button>
+                    
             </CardItem>
           </Card>
           

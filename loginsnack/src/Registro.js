@@ -4,6 +4,18 @@ import { Container,Button,Text, Header, Content, Card, CardItem,Body,Item, Label
 import api from '../Data/api';
 
 class Registro extends Component {
+    constructor(props){
+     super(props);
+    this.state = {
+    user:'',
+    email:'',
+    pass:''};
+  }
+  mensaje = ()=>{alert('Datos guardados')};
+		
+		
+register = () => api.registerData(this.state.email, this.state.user, this.state.pass)
+
   render(){
   const navegar = this.props.navigation;
     return(
