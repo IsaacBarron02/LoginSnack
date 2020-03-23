@@ -8,7 +8,7 @@
 
     $pass = $obj['pass'];
 
-    $add = $mysqli->query("insert into usuario (nombre,pass) values('$usuario','$pass')");
+    $add = $mysqli->query("insert into usuario (usuario,pass) values('$usuario','$pass')");
 
     if($add){
         echo json_encode('User Registered Successfully');
